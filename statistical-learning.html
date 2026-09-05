@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>2 Statistical Learning | An Introduction to Statistical Learning</title>
   <meta name="description" content="2 Statistical Learning | An Introduction to Statistical Learning" />
-  <meta name="generator" content="bookdown 0.29.3 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.48.1 and GitBook 2.6.7" />
 
   <meta property="og:title" content="2 Statistical Learning | An Introduction to Statistical Learning" />
   <meta property="og:type" content="book" />
@@ -47,25 +47,25 @@
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -85,13 +85,13 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-le
 div.sourceCode
   {   }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -104,7 +104,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -118,6 +118,10 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 
 <link rel="stylesheet" href="islrv2.css" type="text/css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css" type="text/css" />
@@ -137,8 +141,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
-<li class="chapter" data-level="2" data-path="statistical-learning.html"><a href="statistical-learning.html"><i class="fa fa-check"></i><b>2</b> Statistical Learning</a><ul>
-<li class="chapter" data-level="2.1" data-path="statistical-learning.html"><a href="statistical-learning.html#conceptual"><i class="fa fa-check"></i><b>2.1</b> Conceptual</a><ul>
+<li class="chapter" data-level="2" data-path="statistical-learning.html"><a href="statistical-learning.html"><i class="fa fa-check"></i><b>2</b> Statistical Learning</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="statistical-learning.html"><a href="statistical-learning.html#conceptual"><i class="fa fa-check"></i><b>2.1</b> Conceptual</a>
+<ul>
 <li class="chapter" data-level="2.1.1" data-path="statistical-learning.html"><a href="statistical-learning.html#question-1"><i class="fa fa-check"></i><b>2.1.1</b> Question 1</a></li>
 <li class="chapter" data-level="2.1.2" data-path="statistical-learning.html"><a href="statistical-learning.html#question-2"><i class="fa fa-check"></i><b>2.1.2</b> Question 2</a></li>
 <li class="chapter" data-level="2.1.3" data-path="statistical-learning.html"><a href="statistical-learning.html#question-3"><i class="fa fa-check"></i><b>2.1.3</b> Question 3</a></li>
@@ -147,14 +153,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.1.6" data-path="statistical-learning.html"><a href="statistical-learning.html#question-6"><i class="fa fa-check"></i><b>2.1.6</b> Question 6</a></li>
 <li class="chapter" data-level="2.1.7" data-path="statistical-learning.html"><a href="statistical-learning.html#question-7"><i class="fa fa-check"></i><b>2.1.7</b> Question 7</a></li>
 </ul></li>
-<li class="chapter" data-level="2.2" data-path="statistical-learning.html"><a href="statistical-learning.html#applied"><i class="fa fa-check"></i><b>2.2</b> Applied</a><ul>
+<li class="chapter" data-level="2.2" data-path="statistical-learning.html"><a href="statistical-learning.html#applied"><i class="fa fa-check"></i><b>2.2</b> Applied</a>
+<ul>
 <li class="chapter" data-level="2.2.1" data-path="statistical-learning.html"><a href="statistical-learning.html#question-8"><i class="fa fa-check"></i><b>2.2.1</b> Question 8</a></li>
 <li class="chapter" data-level="2.2.2" data-path="statistical-learning.html"><a href="statistical-learning.html#question-9"><i class="fa fa-check"></i><b>2.2.2</b> Question 9</a></li>
 <li class="chapter" data-level="2.2.3" data-path="statistical-learning.html"><a href="statistical-learning.html#question-10"><i class="fa fa-check"></i><b>2.2.3</b> Question 10</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="linear-regression.html"><a href="linear-regression.html"><i class="fa fa-check"></i><b>3</b> Linear Regression</a><ul>
-<li class="chapter" data-level="3.1" data-path="linear-regression.html"><a href="linear-regression.html#conceptual-1"><i class="fa fa-check"></i><b>3.1</b> Conceptual</a><ul>
+<li class="chapter" data-level="3" data-path="linear-regression.html"><a href="linear-regression.html"><i class="fa fa-check"></i><b>3</b> Linear Regression</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="linear-regression.html"><a href="linear-regression.html#conceptual-1"><i class="fa fa-check"></i><b>3.1</b> Conceptual</a>
+<ul>
 <li class="chapter" data-level="3.1.1" data-path="linear-regression.html"><a href="linear-regression.html#question-1-1"><i class="fa fa-check"></i><b>3.1.1</b> Question 1</a></li>
 <li class="chapter" data-level="3.1.2" data-path="linear-regression.html"><a href="linear-regression.html#question-2-1"><i class="fa fa-check"></i><b>3.1.2</b> Question 2</a></li>
 <li class="chapter" data-level="3.1.3" data-path="linear-regression.html"><a href="linear-regression.html#question-3-1"><i class="fa fa-check"></i><b>3.1.3</b> Question 3</a></li>
@@ -163,7 +172,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.1.6" data-path="linear-regression.html"><a href="linear-regression.html#question-6-1"><i class="fa fa-check"></i><b>3.1.6</b> Question 6</a></li>
 <li class="chapter" data-level="3.1.7" data-path="linear-regression.html"><a href="linear-regression.html#question-7-1"><i class="fa fa-check"></i><b>3.1.7</b> Question 7</a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="linear-regression.html"><a href="linear-regression.html#applied-1"><i class="fa fa-check"></i><b>3.2</b> Applied</a><ul>
+<li class="chapter" data-level="3.2" data-path="linear-regression.html"><a href="linear-regression.html#applied-1"><i class="fa fa-check"></i><b>3.2</b> Applied</a>
+<ul>
 <li class="chapter" data-level="3.2.1" data-path="linear-regression.html"><a href="linear-regression.html#question-8-1"><i class="fa fa-check"></i><b>3.2.1</b> Question 8</a></li>
 <li class="chapter" data-level="3.2.2" data-path="linear-regression.html"><a href="linear-regression.html#question-9-1"><i class="fa fa-check"></i><b>3.2.2</b> Question 9</a></li>
 <li class="chapter" data-level="3.2.3" data-path="linear-regression.html"><a href="linear-regression.html#question-10-1"><i class="fa fa-check"></i><b>3.2.3</b> Question 10</a></li>
@@ -174,8 +184,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.2.8" data-path="linear-regression.html"><a href="linear-regression.html#question-15"><i class="fa fa-check"></i><b>3.2.8</b> Question 15</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="classification.html"><a href="classification.html"><i class="fa fa-check"></i><b>4</b> Classification</a><ul>
-<li class="chapter" data-level="4.1" data-path="classification.html"><a href="classification.html#conceptual-2"><i class="fa fa-check"></i><b>4.1</b> Conceptual</a><ul>
+<li class="chapter" data-level="4" data-path="classification.html"><a href="classification.html"><i class="fa fa-check"></i><b>4</b> Classification</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="classification.html"><a href="classification.html#conceptual-2"><i class="fa fa-check"></i><b>4.1</b> Conceptual</a>
+<ul>
 <li class="chapter" data-level="4.1.1" data-path="classification.html"><a href="classification.html#question-1-2"><i class="fa fa-check"></i><b>4.1.1</b> Question 1</a></li>
 <li class="chapter" data-level="4.1.2" data-path="classification.html"><a href="classification.html#question-2-2"><i class="fa fa-check"></i><b>4.1.2</b> Question 2</a></li>
 <li class="chapter" data-level="4.1.3" data-path="classification.html"><a href="classification.html#question-3-2"><i class="fa fa-check"></i><b>4.1.3</b> Question 3</a></li>
@@ -189,21 +201,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.1.11" data-path="classification.html"><a href="classification.html#question-11-1"><i class="fa fa-check"></i><b>4.1.11</b> Question 11</a></li>
 <li class="chapter" data-level="4.1.12" data-path="classification.html"><a href="classification.html#question-12-1"><i class="fa fa-check"></i><b>4.1.12</b> Question 12</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="classification.html"><a href="classification.html#applied-2"><i class="fa fa-check"></i><b>4.2</b> Applied</a><ul>
+<li class="chapter" data-level="4.2" data-path="classification.html"><a href="classification.html#applied-2"><i class="fa fa-check"></i><b>4.2</b> Applied</a>
+<ul>
 <li class="chapter" data-level="4.2.1" data-path="classification.html"><a href="classification.html#question-13-1"><i class="fa fa-check"></i><b>4.2.1</b> Question 13</a></li>
 <li class="chapter" data-level="4.2.2" data-path="classification.html"><a href="classification.html#question-14-1"><i class="fa fa-check"></i><b>4.2.2</b> Question 14</a></li>
 <li class="chapter" data-level="4.2.3" data-path="classification.html"><a href="classification.html#question-15-1"><i class="fa fa-check"></i><b>4.2.3</b> Question 15</a></li>
 <li class="chapter" data-level="4.2.4" data-path="classification.html"><a href="classification.html#question-13-2"><i class="fa fa-check"></i><b>4.2.4</b> Question 13</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="resampling-methods.html"><a href="resampling-methods.html"><i class="fa fa-check"></i><b>5</b> Resampling Methods</a><ul>
-<li class="chapter" data-level="5.1" data-path="resampling-methods.html"><a href="resampling-methods.html#conceptual-3"><i class="fa fa-check"></i><b>5.1</b> Conceptual</a><ul>
+<li class="chapter" data-level="5" data-path="resampling-methods.html"><a href="resampling-methods.html"><i class="fa fa-check"></i><b>5</b> Resampling Methods</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="resampling-methods.html"><a href="resampling-methods.html#conceptual-3"><i class="fa fa-check"></i><b>5.1</b> Conceptual</a>
+<ul>
 <li class="chapter" data-level="5.1.1" data-path="resampling-methods.html"><a href="resampling-methods.html#question-1-3"><i class="fa fa-check"></i><b>5.1.1</b> Question 1</a></li>
 <li class="chapter" data-level="5.1.2" data-path="resampling-methods.html"><a href="resampling-methods.html#question-2-3"><i class="fa fa-check"></i><b>5.1.2</b> Question 2</a></li>
 <li class="chapter" data-level="5.1.3" data-path="resampling-methods.html"><a href="resampling-methods.html#question-3-3"><i class="fa fa-check"></i><b>5.1.3</b> Question 3</a></li>
 <li class="chapter" data-level="5.1.4" data-path="resampling-methods.html"><a href="resampling-methods.html#question-4-3"><i class="fa fa-check"></i><b>5.1.4</b> Question 4</a></li>
 </ul></li>
-<li class="chapter" data-level="5.2" data-path="resampling-methods.html"><a href="resampling-methods.html#applied-3"><i class="fa fa-check"></i><b>5.2</b> Applied</a><ul>
+<li class="chapter" data-level="5.2" data-path="resampling-methods.html"><a href="resampling-methods.html#applied-3"><i class="fa fa-check"></i><b>5.2</b> Applied</a>
+<ul>
 <li class="chapter" data-level="5.2.1" data-path="resampling-methods.html"><a href="resampling-methods.html#question-5-3"><i class="fa fa-check"></i><b>5.2.1</b> Question 5</a></li>
 <li class="chapter" data-level="5.2.2" data-path="resampling-methods.html"><a href="resampling-methods.html#question-6-3"><i class="fa fa-check"></i><b>5.2.2</b> Question 6</a></li>
 <li class="chapter" data-level="5.2.3" data-path="resampling-methods.html"><a href="resampling-methods.html#question-7-3"><i class="fa fa-check"></i><b>5.2.3</b> Question 7</a></li>
@@ -211,8 +227,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.2.5" data-path="resampling-methods.html"><a href="resampling-methods.html#question-9-3"><i class="fa fa-check"></i><b>5.2.5</b> Question 9</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="linear-model-selection-and-regularization.html"><a href="linear-model-selection-and-regularization.html"><i class="fa fa-check"></i><b>6</b> Linear Model Selection and Regularization</a><ul>
-<li class="chapter" data-level="6.1" data-path="linear-model-selection-and-regularization.html"><a href="linear-model-selection-and-regularization.html#conceptual-4"><i class="fa fa-check"></i><b>6.1</b> Conceptual</a><ul>
+<li class="chapter" data-level="6" data-path="linear-model-selection-and-regularization.html"><a href="linear-model-selection-and-regularization.html"><i class="fa fa-check"></i><b>6</b> Linear Model Selection and Regularization</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="linear-model-selection-and-regularization.html"><a href="linear-model-selection-and-regularization.html#conceptual-4"><i class="fa fa-check"></i><b>6.1</b> Conceptual</a>
+<ul>
 <li class="chapter" data-level="6.1.1" data-path="linear-model-selection-and-regularization.html"><a href="linear-model-selection-and-regularization.html#question-1-4"><i class="fa fa-check"></i><b>6.1.1</b> Question 1</a></li>
 <li class="chapter" data-level="6.1.2" data-path="linear-model-selection-and-regularization.html"><a href="linear-model-selection-and-regularization.html#question-2-4"><i class="fa fa-check"></i><b>6.1.2</b> Question 2</a></li>
 <li class="chapter" data-level="6.1.3" data-path="linear-model-selection-and-regularization.html"><a href="linear-model-selection-and-regularization.html#question-3-4"><i class="fa fa-check"></i><b>6.1.3</b> Question 3</a></li>
@@ -221,22 +239,26 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.1.6" data-path="linear-model-selection-and-regularization.html"><a href="linear-model-selection-and-regularization.html#question-6-4"><i class="fa fa-check"></i><b>6.1.6</b> Question 6</a></li>
 <li class="chapter" data-level="6.1.7" data-path="linear-model-selection-and-regularization.html"><a href="linear-model-selection-and-regularization.html#question-7-4"><i class="fa fa-check"></i><b>6.1.7</b> Question 7</a></li>
 </ul></li>
-<li class="chapter" data-level="6.2" data-path="linear-model-selection-and-regularization.html"><a href="linear-model-selection-and-regularization.html#applied-4"><i class="fa fa-check"></i><b>6.2</b> Applied</a><ul>
+<li class="chapter" data-level="6.2" data-path="linear-model-selection-and-regularization.html"><a href="linear-model-selection-and-regularization.html#applied-4"><i class="fa fa-check"></i><b>6.2</b> Applied</a>
+<ul>
 <li class="chapter" data-level="6.2.1" data-path="linear-model-selection-and-regularization.html"><a href="linear-model-selection-and-regularization.html#question-8-4"><i class="fa fa-check"></i><b>6.2.1</b> Question 8</a></li>
 <li class="chapter" data-level="6.2.2" data-path="linear-model-selection-and-regularization.html"><a href="linear-model-selection-and-regularization.html#question-9-4"><i class="fa fa-check"></i><b>6.2.2</b> Question 9</a></li>
 <li class="chapter" data-level="6.2.3" data-path="linear-model-selection-and-regularization.html"><a href="linear-model-selection-and-regularization.html#question-10-3"><i class="fa fa-check"></i><b>6.2.3</b> Question 10</a></li>
 <li class="chapter" data-level="6.2.4" data-path="linear-model-selection-and-regularization.html"><a href="linear-model-selection-and-regularization.html#question-11-2"><i class="fa fa-check"></i><b>6.2.4</b> Question 11</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="moving-beyond-linearity.html"><a href="moving-beyond-linearity.html"><i class="fa fa-check"></i><b>7</b> Moving Beyond Linearity</a><ul>
-<li class="chapter" data-level="7.1" data-path="moving-beyond-linearity.html"><a href="moving-beyond-linearity.html#conceptual-5"><i class="fa fa-check"></i><b>7.1</b> Conceptual</a><ul>
+<li class="chapter" data-level="7" data-path="moving-beyond-linearity.html"><a href="moving-beyond-linearity.html"><i class="fa fa-check"></i><b>7</b> Moving Beyond Linearity</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="moving-beyond-linearity.html"><a href="moving-beyond-linearity.html#conceptual-5"><i class="fa fa-check"></i><b>7.1</b> Conceptual</a>
+<ul>
 <li class="chapter" data-level="7.1.1" data-path="moving-beyond-linearity.html"><a href="moving-beyond-linearity.html#question-1-5"><i class="fa fa-check"></i><b>7.1.1</b> Question 1</a></li>
 <li class="chapter" data-level="7.1.2" data-path="moving-beyond-linearity.html"><a href="moving-beyond-linearity.html#question-2-5"><i class="fa fa-check"></i><b>7.1.2</b> Question 2</a></li>
 <li class="chapter" data-level="7.1.3" data-path="moving-beyond-linearity.html"><a href="moving-beyond-linearity.html#question-3-5"><i class="fa fa-check"></i><b>7.1.3</b> Question 3</a></li>
 <li class="chapter" data-level="7.1.4" data-path="moving-beyond-linearity.html"><a href="moving-beyond-linearity.html#question-4-5"><i class="fa fa-check"></i><b>7.1.4</b> Question 4</a></li>
 <li class="chapter" data-level="7.1.5" data-path="moving-beyond-linearity.html"><a href="moving-beyond-linearity.html#question-5-5"><i class="fa fa-check"></i><b>7.1.5</b> Question 5</a></li>
 </ul></li>
-<li class="chapter" data-level="7.2" data-path="moving-beyond-linearity.html"><a href="moving-beyond-linearity.html#applied-5"><i class="fa fa-check"></i><b>7.2</b> Applied</a><ul>
+<li class="chapter" data-level="7.2" data-path="moving-beyond-linearity.html"><a href="moving-beyond-linearity.html#applied-5"><i class="fa fa-check"></i><b>7.2</b> Applied</a>
+<ul>
 <li class="chapter" data-level="7.2.1" data-path="moving-beyond-linearity.html"><a href="moving-beyond-linearity.html#question-6-5"><i class="fa fa-check"></i><b>7.2.1</b> Question 6</a></li>
 <li class="chapter" data-level="7.2.2" data-path="moving-beyond-linearity.html"><a href="moving-beyond-linearity.html#question-7-5"><i class="fa fa-check"></i><b>7.2.2</b> Question 7</a></li>
 <li class="chapter" data-level="7.2.3" data-path="moving-beyond-linearity.html"><a href="moving-beyond-linearity.html#question-8-5"><i class="fa fa-check"></i><b>7.2.3</b> Question 8</a></li>
@@ -246,8 +268,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="7.2.7" data-path="moving-beyond-linearity.html"><a href="moving-beyond-linearity.html#question-12-2"><i class="fa fa-check"></i><b>7.2.7</b> Question 12</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="tree-based-methods.html"><a href="tree-based-methods.html"><i class="fa fa-check"></i><b>8</b> Tree-Based Methods</a><ul>
-<li class="chapter" data-level="8.1" data-path="tree-based-methods.html"><a href="tree-based-methods.html#conceptual-6"><i class="fa fa-check"></i><b>8.1</b> Conceptual</a><ul>
+<li class="chapter" data-level="8" data-path="tree-based-methods.html"><a href="tree-based-methods.html"><i class="fa fa-check"></i><b>8</b> Tree-Based Methods</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="tree-based-methods.html"><a href="tree-based-methods.html#conceptual-6"><i class="fa fa-check"></i><b>8.1</b> Conceptual</a>
+<ul>
 <li class="chapter" data-level="8.1.1" data-path="tree-based-methods.html"><a href="tree-based-methods.html#question-1-6"><i class="fa fa-check"></i><b>8.1.1</b> Question 1</a></li>
 <li class="chapter" data-level="8.1.2" data-path="tree-based-methods.html"><a href="tree-based-methods.html#question-2-6"><i class="fa fa-check"></i><b>8.1.2</b> Question 2</a></li>
 <li class="chapter" data-level="8.1.3" data-path="tree-based-methods.html"><a href="tree-based-methods.html#question-3-6"><i class="fa fa-check"></i><b>8.1.3</b> Question 3</a></li>
@@ -255,7 +279,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.1.5" data-path="tree-based-methods.html"><a href="tree-based-methods.html#question-5-6"><i class="fa fa-check"></i><b>8.1.5</b> Question 5</a></li>
 <li class="chapter" data-level="8.1.6" data-path="tree-based-methods.html"><a href="tree-based-methods.html#question-6-6"><i class="fa fa-check"></i><b>8.1.6</b> Question 6</a></li>
 </ul></li>
-<li class="chapter" data-level="8.2" data-path="tree-based-methods.html"><a href="tree-based-methods.html#applied-6"><i class="fa fa-check"></i><b>8.2</b> Applied</a><ul>
+<li class="chapter" data-level="8.2" data-path="tree-based-methods.html"><a href="tree-based-methods.html#applied-6"><i class="fa fa-check"></i><b>8.2</b> Applied</a>
+<ul>
 <li class="chapter" data-level="8.2.1" data-path="tree-based-methods.html"><a href="tree-based-methods.html#question-7-6"><i class="fa fa-check"></i><b>8.2.1</b> Question 7</a></li>
 <li class="chapter" data-level="8.2.2" data-path="tree-based-methods.html"><a href="tree-based-methods.html#question-8-6"><i class="fa fa-check"></i><b>8.2.2</b> Question 8</a></li>
 <li class="chapter" data-level="8.2.3" data-path="tree-based-methods.html"><a href="tree-based-methods.html#question-9-6"><i class="fa fa-check"></i><b>8.2.3</b> Question 9</a></li>
@@ -264,13 +289,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.2.6" data-path="tree-based-methods.html"><a href="tree-based-methods.html#question-12-3"><i class="fa fa-check"></i><b>8.2.6</b> Question 12</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="support-vector-machines.html"><a href="support-vector-machines.html"><i class="fa fa-check"></i><b>9</b> Support Vector Machines</a><ul>
-<li class="chapter" data-level="9.1" data-path="support-vector-machines.html"><a href="support-vector-machines.html#conceptual-7"><i class="fa fa-check"></i><b>9.1</b> Conceptual</a><ul>
+<li class="chapter" data-level="9" data-path="support-vector-machines.html"><a href="support-vector-machines.html"><i class="fa fa-check"></i><b>9</b> Support Vector Machines</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="support-vector-machines.html"><a href="support-vector-machines.html#conceptual-7"><i class="fa fa-check"></i><b>9.1</b> Conceptual</a>
+<ul>
 <li class="chapter" data-level="9.1.1" data-path="support-vector-machines.html"><a href="support-vector-machines.html#question-1-7"><i class="fa fa-check"></i><b>9.1.1</b> Question 1</a></li>
 <li class="chapter" data-level="9.1.2" data-path="support-vector-machines.html"><a href="support-vector-machines.html#question-2-7"><i class="fa fa-check"></i><b>9.1.2</b> Question 2</a></li>
 <li class="chapter" data-level="9.1.3" data-path="support-vector-machines.html"><a href="support-vector-machines.html#question-3-7"><i class="fa fa-check"></i><b>9.1.3</b> Question 3</a></li>
 </ul></li>
-<li class="chapter" data-level="9.2" data-path="support-vector-machines.html"><a href="support-vector-machines.html#applied-7"><i class="fa fa-check"></i><b>9.2</b> Applied</a><ul>
+<li class="chapter" data-level="9.2" data-path="support-vector-machines.html"><a href="support-vector-machines.html#applied-7"><i class="fa fa-check"></i><b>9.2</b> Applied</a>
+<ul>
 <li class="chapter" data-level="9.2.1" data-path="support-vector-machines.html"><a href="support-vector-machines.html#question-4-7"><i class="fa fa-check"></i><b>9.2.1</b> Question 4</a></li>
 <li class="chapter" data-level="9.2.2" data-path="support-vector-machines.html"><a href="support-vector-machines.html#question-5-7"><i class="fa fa-check"></i><b>9.2.2</b> Question 5</a></li>
 <li class="chapter" data-level="9.2.3" data-path="support-vector-machines.html"><a href="support-vector-machines.html#question-6-7"><i class="fa fa-check"></i><b>9.2.3</b> Question 6</a></li>
@@ -278,15 +306,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="9.2.5" data-path="support-vector-machines.html"><a href="support-vector-machines.html#question-8-7"><i class="fa fa-check"></i><b>9.2.5</b> Question 8</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="10" data-path="deep-learning.html"><a href="deep-learning.html"><i class="fa fa-check"></i><b>10</b> Deep Learning</a><ul>
-<li class="chapter" data-level="10.1" data-path="deep-learning.html"><a href="deep-learning.html#conceptual-8"><i class="fa fa-check"></i><b>10.1</b> Conceptual</a><ul>
+<li class="chapter" data-level="10" data-path="deep-learning.html"><a href="deep-learning.html"><i class="fa fa-check"></i><b>10</b> Deep Learning</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="deep-learning.html"><a href="deep-learning.html#conceptual-8"><i class="fa fa-check"></i><b>10.1</b> Conceptual</a>
+<ul>
 <li class="chapter" data-level="10.1.1" data-path="deep-learning.html"><a href="deep-learning.html#question-1-8"><i class="fa fa-check"></i><b>10.1.1</b> Question 1</a></li>
 <li class="chapter" data-level="10.1.2" data-path="deep-learning.html"><a href="deep-learning.html#question-2-8"><i class="fa fa-check"></i><b>10.1.2</b> Question 2</a></li>
 <li class="chapter" data-level="10.1.3" data-path="deep-learning.html"><a href="deep-learning.html#question-3-8"><i class="fa fa-check"></i><b>10.1.3</b> Question 3</a></li>
 <li class="chapter" data-level="10.1.4" data-path="deep-learning.html"><a href="deep-learning.html#question-4-8"><i class="fa fa-check"></i><b>10.1.4</b> Question 4</a></li>
 <li class="chapter" data-level="10.1.5" data-path="deep-learning.html"><a href="deep-learning.html#question-5-8"><i class="fa fa-check"></i><b>10.1.5</b> Question 5</a></li>
 </ul></li>
-<li class="chapter" data-level="10.2" data-path="deep-learning.html"><a href="deep-learning.html#applied-8"><i class="fa fa-check"></i><b>10.2</b> Applied</a><ul>
+<li class="chapter" data-level="10.2" data-path="deep-learning.html"><a href="deep-learning.html#applied-8"><i class="fa fa-check"></i><b>10.2</b> Applied</a>
+<ul>
 <li class="chapter" data-level="10.2.1" data-path="deep-learning.html"><a href="deep-learning.html#question-6-8"><i class="fa fa-check"></i><b>10.2.1</b> Question 6</a></li>
 <li class="chapter" data-level="10.2.2" data-path="deep-learning.html"><a href="deep-learning.html#question-7-8"><i class="fa fa-check"></i><b>10.2.2</b> Question 7</a></li>
 <li class="chapter" data-level="10.2.3" data-path="deep-learning.html"><a href="deep-learning.html#question-8-8"><i class="fa fa-check"></i><b>10.2.3</b> Question 8</a></li>
@@ -297,8 +328,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="10.2.8" data-path="deep-learning.html"><a href="deep-learning.html#question-13-3"><i class="fa fa-check"></i><b>10.2.8</b> Question 13</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="11" data-path="survival-analysis-and-censored-data.html"><a href="survival-analysis-and-censored-data.html"><i class="fa fa-check"></i><b>11</b> Survival Analysis and Censored Data</a><ul>
-<li class="chapter" data-level="11.1" data-path="survival-analysis-and-censored-data.html"><a href="survival-analysis-and-censored-data.html#conceptual-9"><i class="fa fa-check"></i><b>11.1</b> Conceptual</a><ul>
+<li class="chapter" data-level="11" data-path="survival-analysis-and-censored-data.html"><a href="survival-analysis-and-censored-data.html"><i class="fa fa-check"></i><b>11</b> Survival Analysis and Censored Data</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="survival-analysis-and-censored-data.html"><a href="survival-analysis-and-censored-data.html#conceptual-9"><i class="fa fa-check"></i><b>11.1</b> Conceptual</a>
+<ul>
 <li class="chapter" data-level="11.1.1" data-path="survival-analysis-and-censored-data.html"><a href="survival-analysis-and-censored-data.html#question-1-9"><i class="fa fa-check"></i><b>11.1.1</b> Question 1</a></li>
 <li class="chapter" data-level="11.1.2" data-path="survival-analysis-and-censored-data.html"><a href="survival-analysis-and-censored-data.html#question-2-9"><i class="fa fa-check"></i><b>11.1.2</b> Question 2</a></li>
 <li class="chapter" data-level="11.1.3" data-path="survival-analysis-and-censored-data.html"><a href="survival-analysis-and-censored-data.html#question-3-9"><i class="fa fa-check"></i><b>11.1.3</b> Question 3</a></li>
@@ -309,13 +342,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="11.1.8" data-path="survival-analysis-and-censored-data.html"><a href="survival-analysis-and-censored-data.html#question-8-9"><i class="fa fa-check"></i><b>11.1.8</b> Question 8</a></li>
 <li class="chapter" data-level="11.1.9" data-path="survival-analysis-and-censored-data.html"><a href="survival-analysis-and-censored-data.html#question-9-8"><i class="fa fa-check"></i><b>11.1.9</b> Question 9</a></li>
 </ul></li>
-<li class="chapter" data-level="11.2" data-path="survival-analysis-and-censored-data.html"><a href="survival-analysis-and-censored-data.html#applied-9"><i class="fa fa-check"></i><b>11.2</b> Applied</a><ul>
+<li class="chapter" data-level="11.2" data-path="survival-analysis-and-censored-data.html"><a href="survival-analysis-and-censored-data.html#applied-9"><i class="fa fa-check"></i><b>11.2</b> Applied</a>
+<ul>
 <li class="chapter" data-level="11.2.1" data-path="survival-analysis-and-censored-data.html"><a href="survival-analysis-and-censored-data.html#question-10-7"><i class="fa fa-check"></i><b>11.2.1</b> Question 10</a></li>
 <li class="chapter" data-level="11.2.2" data-path="survival-analysis-and-censored-data.html"><a href="survival-analysis-and-censored-data.html#question-11-6"><i class="fa fa-check"></i><b>11.2.2</b> Question 11</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="12" data-path="unsupervised-learning.html"><a href="unsupervised-learning.html"><i class="fa fa-check"></i><b>12</b> Unsupervised Learning</a><ul>
-<li class="chapter" data-level="12.1" data-path="unsupervised-learning.html"><a href="unsupervised-learning.html#conceptual-10"><i class="fa fa-check"></i><b>12.1</b> Conceptual</a><ul>
+<li class="chapter" data-level="12" data-path="unsupervised-learning.html"><a href="unsupervised-learning.html"><i class="fa fa-check"></i><b>12</b> Unsupervised Learning</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="unsupervised-learning.html"><a href="unsupervised-learning.html#conceptual-10"><i class="fa fa-check"></i><b>12.1</b> Conceptual</a>
+<ul>
 <li class="chapter" data-level="12.1.1" data-path="unsupervised-learning.html"><a href="unsupervised-learning.html#question-1-10"><i class="fa fa-check"></i><b>12.1.1</b> Question 1</a></li>
 <li class="chapter" data-level="12.1.2" data-path="unsupervised-learning.html"><a href="unsupervised-learning.html#question-2-10"><i class="fa fa-check"></i><b>12.1.2</b> Question 2</a></li>
 <li class="chapter" data-level="12.1.3" data-path="unsupervised-learning.html"><a href="unsupervised-learning.html#question-3-10"><i class="fa fa-check"></i><b>12.1.3</b> Question 3</a></li>
@@ -323,7 +359,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="12.1.5" data-path="unsupervised-learning.html"><a href="unsupervised-learning.html#question-5-10"><i class="fa fa-check"></i><b>12.1.5</b> Question 5</a></li>
 <li class="chapter" data-level="12.1.6" data-path="unsupervised-learning.html"><a href="unsupervised-learning.html#question-6-10"><i class="fa fa-check"></i><b>12.1.6</b> Question 6</a></li>
 </ul></li>
-<li class="chapter" data-level="12.2" data-path="unsupervised-learning.html"><a href="unsupervised-learning.html#applied-10"><i class="fa fa-check"></i><b>12.2</b> Applied</a><ul>
+<li class="chapter" data-level="12.2" data-path="unsupervised-learning.html"><a href="unsupervised-learning.html#applied-10"><i class="fa fa-check"></i><b>12.2</b> Applied</a>
+<ul>
 <li class="chapter" data-level="12.2.1" data-path="unsupervised-learning.html"><a href="unsupervised-learning.html#question-7-10"><i class="fa fa-check"></i><b>12.2.1</b> Question 7</a></li>
 <li class="chapter" data-level="12.2.2" data-path="unsupervised-learning.html"><a href="unsupervised-learning.html#question-8-10"><i class="fa fa-check"></i><b>12.2.2</b> Question 8</a></li>
 <li class="chapter" data-level="12.2.3" data-path="unsupervised-learning.html"><a href="unsupervised-learning.html#question-9-9"><i class="fa fa-check"></i><b>12.2.3</b> Question 9</a></li>
@@ -333,8 +370,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="12.2.7" data-path="unsupervised-learning.html"><a href="unsupervised-learning.html#question-13-4"><i class="fa fa-check"></i><b>12.2.7</b> Question 13</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="13" data-path="multiple-testing.html"><a href="multiple-testing.html"><i class="fa fa-check"></i><b>13</b> Multiple Testing</a><ul>
-<li class="chapter" data-level="13.1" data-path="multiple-testing.html"><a href="multiple-testing.html#conceptual-11"><i class="fa fa-check"></i><b>13.1</b> Conceptual</a><ul>
+<li class="chapter" data-level="13" data-path="multiple-testing.html"><a href="multiple-testing.html"><i class="fa fa-check"></i><b>13</b> Multiple Testing</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="multiple-testing.html"><a href="multiple-testing.html#conceptual-11"><i class="fa fa-check"></i><b>13.1</b> Conceptual</a>
+<ul>
 <li class="chapter" data-level="13.1.1" data-path="multiple-testing.html"><a href="multiple-testing.html#question-1-11"><i class="fa fa-check"></i><b>13.1.1</b> Question 1</a></li>
 <li class="chapter" data-level="13.1.2" data-path="multiple-testing.html"><a href="multiple-testing.html#question-2-11"><i class="fa fa-check"></i><b>13.1.2</b> Question 2</a></li>
 <li class="chapter" data-level="13.1.3" data-path="multiple-testing.html"><a href="multiple-testing.html#question-3-11"><i class="fa fa-check"></i><b>13.1.3</b> Question 3</a></li>
@@ -342,7 +381,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="13.1.5" data-path="multiple-testing.html"><a href="multiple-testing.html#question-5-11"><i class="fa fa-check"></i><b>13.1.5</b> Question 5</a></li>
 <li class="chapter" data-level="13.1.6" data-path="multiple-testing.html"><a href="multiple-testing.html#question-6-11"><i class="fa fa-check"></i><b>13.1.6</b> Question 6</a></li>
 </ul></li>
-<li class="chapter" data-level="13.2" data-path="multiple-testing.html"><a href="multiple-testing.html#applied-11"><i class="fa fa-check"></i><b>13.2</b> Applied</a><ul>
+<li class="chapter" data-level="13.2" data-path="multiple-testing.html"><a href="multiple-testing.html#applied-11"><i class="fa fa-check"></i><b>13.2</b> Applied</a>
+<ul>
 <li class="chapter" data-level="13.2.1" data-path="multiple-testing.html"><a href="multiple-testing.html#question-7-11"><i class="fa fa-check"></i><b>13.2.1</b> Question 7</a></li>
 <li class="chapter" data-level="13.2.2" data-path="multiple-testing.html"><a href="multiple-testing.html#question-8-11"><i class="fa fa-check"></i><b>13.2.2</b> Question 8</a></li>
 </ul></li>
@@ -367,11 +407,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="statistical-learning" class="section level1 hasAnchor">
+<div id="statistical-learning" class="section level1 hasAnchor" number="2">
 <h1><span class="header-section-number">2</span> Statistical Learning<a href="statistical-learning.html#statistical-learning" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="conceptual" class="section level2 hasAnchor">
+<div id="conceptual" class="section level2 hasAnchor" number="2.1">
 <h2><span class="header-section-number">2.1</span> Conceptual<a href="statistical-learning.html#conceptual" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="question-1" class="section level3 hasAnchor">
+<div id="question-1" class="section level3 hasAnchor" number="2.1.1">
 <h3><span class="header-section-number">2.1.1</span> Question 1<a href="statistical-learning.html#question-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <blockquote>
 <p>For each of parts (a) through (d), indicate whether we would generally expect
@@ -380,71 +420,226 @@ worse than an inflexible method. Justify your answer.</p>
 <ol style="list-style-type: lower-alpha">
 <li>The sample size n is extremely large, and the number of predictors p is
 small.</li>
+</ol>
+</blockquote>
+<p>Flexible &gt; inflexible
+Lots of data available, allowing for a flexible model to capture the underlying patterns with a few predictors.</p>
+<blockquote>
+<ol start="2" style="list-style-type: lower-alpha">
 <li>The number of predictors p is extremely large, and the number of
 observations n is small.</li>
+</ol>
+</blockquote>
+<p>Inflexible &gt; Flexible
+Lots of predictor assigned to little info. May lead to overfitting with a flexible method.
+Inflexible method will have higher bias, but lower variance and the predictors will “latch” less spuriously to the data.</p>
+<blockquote>
+<ol start="3" style="list-style-type: lower-alpha">
 <li>The relationship between the predictors and response is highly
 non-linear.</li>
+</ol>
+</blockquote>
+<p>Flexible &gt; non-nlexible
+Flexible methods are more apt to estimate f(x) than inflexible methods, as they have more df to accomodate non-linearity.
+e.g., OLS regression vs. adding polynomials or splines</p>
+<blockquote>
+<ol start="4" style="list-style-type: lower-alpha">
 <li>The variance of the error terms, i.e. <span class="math inline">\(\sigma^2 = Var(\epsilon)\)</span>, is
 extremely high.</li>
 </ol>
 </blockquote>
+<p>Inflexible &gt; flexible
+Inflexible method less affected by high variability of the error term. Less overfitting through lower variance, higher bias.</p>
 </div>
-<div id="question-2" class="section level3 hasAnchor">
+<div id="question-2" class="section level3 hasAnchor" number="2.1.2">
 <h3><span class="header-section-number">2.1.2</span> Question 2<a href="statistical-learning.html#question-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <blockquote>
 <p>Explain whether each scenario is a classification or regression problem, and
 indicate whether we are most interested in inference or prediction. Finally,
 provide n and p.</p>
 <ol style="list-style-type: lower-alpha">
-<li><p>We collect a set of data on the top 500 firms in the US. For each firm
+<li>We collect a set of data on the top 500 firms in the US. For each firm
 we record profit, number of employees, industry and the CEO salary. We are
-interested in understanding which factors affect CEO salary.</p></li>
-<li><p>We are considering launching a new product and wish to know whether
+interested in understanding which factors affect CEO salary.</li>
+</ol>
+</blockquote>
+<p><strong>Inference</strong> - n = 500; p = 3</p>
+<blockquote>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>We are considering launching a new product and wish to know whether
 it will be a success or a failure. We collect data on 20 similar products
 that were previously launched. For each product we have recorded whether it
 was a success or failure, price charged for the product, marketing budget,
-competition price, and ten other variables.</p></li>
-<li><p>We are interested in predicting the % change in the USD/Euro exchange
+competition price, and ten other variables.</li>
+</ol>
+</blockquote>
+<p><strong>Classification</strong> - n = 20; p = 13</p>
+<blockquote>
+<ol start="3" style="list-style-type: lower-alpha">
+<li>We are interested in predicting the % change in the USD/Euro exchange
 rate in relation to the weekly changes in the world stock markets. Hence we
 collect weekly data for all of 2012. For each week we record the % change
 in the USD/Euro, the % change in the US market, the % change in the British
-market, and the % change in the German market.</p></li>
+market, and the % change in the German market.</li>
 </ol>
 </blockquote>
+<p><strong>Prediction</strong>; n = 52; p = 3</p>
 </div>
-<div id="question-3" class="section level3 hasAnchor">
+<div id="question-3" class="section level3 hasAnchor" number="2.1.3">
 <h3><span class="header-section-number">2.1.3</span> Question 3<a href="statistical-learning.html#question-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <blockquote>
 <p>We now revisit the bias-variance decomposition.</p>
 <ol style="list-style-type: lower-alpha">
-<li><p>Provide a sketch of typical (squared) bias, variance, training error,
+<li>Provide a sketch of typical (squared) bias, variance, training error,
 test error, and Bayes (or irreducible) error curves, on a single plot, as
 we go from less flexible statistical learning methods towards more flexible
 approaches. The x-axis should represent the amount of flexibility in the
 method, and the y-axis should represent the values for each curve. There
-should be five curves. Make sure to label each one.</p></li>
-<li><p>Explain why each of the five curves has the shape displayed in
-part (a).</p></li>
+should be five curves. Make sure to label each one.</li>
 </ol>
 </blockquote>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="statistical-learning.html#cb1-1" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-2"><a href="statistical-learning.html#cb1-2" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
+<span id="cb1-3"><a href="statistical-learning.html#cb1-3" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="statistical-learning.html#cb1-4" tabindex="-1"></a>flex <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="at">length.out =</span> <span class="dv">200</span>)</span>
+<span id="cb1-5"><a href="statistical-learning.html#cb1-5" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="statistical-learning.html#cb1-6" tabindex="-1"></a>sq_bias   <span class="ot">&lt;-</span> <span class="fl">3.8</span> <span class="sc">*</span> (<span class="dv">1</span> <span class="sc">-</span> flex)<span class="sc">^</span><span class="fl">2.2</span> <span class="sc">+</span> <span class="fl">0.1</span></span>
+<span id="cb1-7"><a href="statistical-learning.html#cb1-7" tabindex="-1"></a>variance  <span class="ot">&lt;-</span> <span class="fl">0.1</span> <span class="sc">+</span> <span class="fl">3.8</span> <span class="sc">*</span> flex<span class="sc">^</span><span class="dv">3</span></span>
+<span id="cb1-8"><a href="statistical-learning.html#cb1-8" tabindex="-1"></a>bayes_err <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="fl">1.0</span>, <span class="fu">length</span>(flex))</span>
+<span id="cb1-9"><a href="statistical-learning.html#cb1-9" tabindex="-1"></a>test_err  <span class="ot">&lt;-</span> sq_bias <span class="sc">+</span> variance <span class="sc">+</span> bayes_err</span>
+<span id="cb1-10"><a href="statistical-learning.html#cb1-10" tabindex="-1"></a>train_err <span class="ot">&lt;-</span> <span class="fl">3.6</span> <span class="sc">*</span> <span class="fu">exp</span>(<span class="sc">-</span><span class="fl">3.2</span> <span class="sc">*</span> flex) <span class="sc">+</span> <span class="fl">0.2</span></span>
+<span id="cb1-11"><a href="statistical-learning.html#cb1-11" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="statistical-learning.html#cb1-12" tabindex="-1"></a>curves <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb1-13"><a href="statistical-learning.html#cb1-13" tabindex="-1"></a>  <span class="at">flex =</span> flex,</span>
+<span id="cb1-14"><a href="statistical-learning.html#cb1-14" tabindex="-1"></a>  <span class="st">`</span><span class="at">Squared Bias</span><span class="st">`</span> <span class="ot">=</span> sq_bias,</span>
+<span id="cb1-15"><a href="statistical-learning.html#cb1-15" tabindex="-1"></a>  <span class="st">`</span><span class="at">Variance</span><span class="st">`</span>     <span class="ot">=</span> variance,</span>
+<span id="cb1-16"><a href="statistical-learning.html#cb1-16" tabindex="-1"></a>  <span class="st">`</span><span class="at">Bayes Error</span><span class="st">`</span>  <span class="ot">=</span> bayes_err,</span>
+<span id="cb1-17"><a href="statistical-learning.html#cb1-17" tabindex="-1"></a>  <span class="st">`</span><span class="at">Test MSE</span><span class="st">`</span>     <span class="ot">=</span> test_err,</span>
+<span id="cb1-18"><a href="statistical-learning.html#cb1-18" tabindex="-1"></a>  <span class="st">`</span><span class="at">Training MSE</span><span class="st">`</span> <span class="ot">=</span> train_err,</span>
+<span id="cb1-19"><a href="statistical-learning.html#cb1-19" tabindex="-1"></a>  <span class="at">check.names =</span> <span class="cn">FALSE</span></span>
+<span id="cb1-20"><a href="statistical-learning.html#cb1-20" tabindex="-1"></a>)</span>
+<span id="cb1-21"><a href="statistical-learning.html#cb1-21" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="statistical-learning.html#cb1-22" tabindex="-1"></a>opt_flex <span class="ot">&lt;-</span> flex[<span class="fu">which.min</span>(test_err)]</span>
+<span id="cb1-23"><a href="statistical-learning.html#cb1-23" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="statistical-learning.html#cb1-24" tabindex="-1"></a>df_long <span class="ot">&lt;-</span> <span class="fu">pivot_longer</span>(curves, <span class="sc">-</span>flex, <span class="at">names_to =</span> <span class="st">&quot;curve&quot;</span>, <span class="at">values_to =</span> <span class="st">&quot;value&quot;</span>)</span>
+<span id="cb1-25"><a href="statistical-learning.html#cb1-25" tabindex="-1"></a>df_long<span class="sc">$</span>curve <span class="ot">&lt;-</span> <span class="fu">factor</span>(df_long<span class="sc">$</span>curve, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">&quot;Test MSE&quot;</span>, <span class="st">&quot;Training MSE&quot;</span>,</span>
+<span id="cb1-26"><a href="statistical-learning.html#cb1-26" tabindex="-1"></a>  <span class="st">&quot;Squared Bias&quot;</span>, <span class="st">&quot;Variance&quot;</span>, <span class="st">&quot;Bayes Error&quot;</span>))</span>
+<span id="cb1-27"><a href="statistical-learning.html#cb1-27" tabindex="-1"></a></span>
+<span id="cb1-28"><a href="statistical-learning.html#cb1-28" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(df_long, <span class="fu">aes</span>(<span class="at">x =</span> flex, <span class="at">y =</span> value, <span class="at">color =</span> curve, <span class="at">linetype =</span> curve)) <span class="sc">+</span></span>
+<span id="cb1-29"><a href="statistical-learning.html#cb1-29" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">linewidth =</span> <span class="fl">1.1</span>) <span class="sc">+</span></span>
+<span id="cb1-30"><a href="statistical-learning.html#cb1-30" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> opt_flex, <span class="at">linetype =</span> <span class="st">&quot;dotted&quot;</span>, <span class="at">color =</span> <span class="st">&quot;grey40&quot;</span>,</span>
+<span id="cb1-31"><a href="statistical-learning.html#cb1-31" tabindex="-1"></a>    <span class="at">linewidth =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
+<span id="cb1-32"><a href="statistical-learning.html#cb1-32" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">&quot;text&quot;</span>, <span class="at">x =</span> opt_flex <span class="sc">+</span> <span class="fl">0.03</span>, <span class="at">y =</span> <span class="fl">5.2</span>, <span class="at">label =</span> <span class="st">&quot;Optimal Flexibility&quot;</span>, </span>
+<span id="cb1-33"><a href="statistical-learning.html#cb1-33" tabindex="-1"></a>           <span class="at">hjust =</span> <span class="dv">0</span>, <span class="at">size =</span> <span class="fl">3.5</span>, <span class="at">fontface =</span> <span class="st">&quot;italic&quot;</span>, <span class="at">color =</span> <span class="st">&quot;grey30&quot;</span>) <span class="sc">+</span></span>
+<span id="cb1-34"><a href="statistical-learning.html#cb1-34" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(</span>
+<span id="cb1-35"><a href="statistical-learning.html#cb1-35" tabindex="-1"></a>    <span class="at">values =</span> <span class="fu">c</span>(</span>
+<span id="cb1-36"><a href="statistical-learning.html#cb1-36" tabindex="-1"></a>      <span class="st">&quot;Test MSE&quot;</span>     <span class="ot">=</span> <span class="st">&quot;#D95F02&quot;</span>,</span>
+<span id="cb1-37"><a href="statistical-learning.html#cb1-37" tabindex="-1"></a>      <span class="st">&quot;Training MSE&quot;</span> <span class="ot">=</span> <span class="st">&quot;#7570B3&quot;</span>,</span>
+<span id="cb1-38"><a href="statistical-learning.html#cb1-38" tabindex="-1"></a>      <span class="st">&quot;Squared Bias&quot;</span> <span class="ot">=</span> <span class="st">&quot;#1B9E77&quot;</span>,</span>
+<span id="cb1-39"><a href="statistical-learning.html#cb1-39" tabindex="-1"></a>      <span class="st">&quot;Variance&quot;</span>     <span class="ot">=</span> <span class="st">&quot;#E7298A&quot;</span>,</span>
+<span id="cb1-40"><a href="statistical-learning.html#cb1-40" tabindex="-1"></a>      <span class="st">&quot;Bayes Error&quot;</span>  <span class="ot">=</span> <span class="st">&quot;#333333&quot;</span></span>
+<span id="cb1-41"><a href="statistical-learning.html#cb1-41" tabindex="-1"></a>    )</span>
+<span id="cb1-42"><a href="statistical-learning.html#cb1-42" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb1-43"><a href="statistical-learning.html#cb1-43" tabindex="-1"></a>  <span class="fu">scale_linetype_manual</span>(</span>
+<span id="cb1-44"><a href="statistical-learning.html#cb1-44" tabindex="-1"></a>    <span class="at">values =</span> <span class="fu">c</span>(</span>
+<span id="cb1-45"><a href="statistical-learning.html#cb1-45" tabindex="-1"></a>      <span class="st">&quot;Test MSE&quot;</span>     <span class="ot">=</span> <span class="st">&quot;solid&quot;</span>,</span>
+<span id="cb1-46"><a href="statistical-learning.html#cb1-46" tabindex="-1"></a>      <span class="st">&quot;Training MSE&quot;</span> <span class="ot">=</span> <span class="st">&quot;solid&quot;</span>,</span>
+<span id="cb1-47"><a href="statistical-learning.html#cb1-47" tabindex="-1"></a>      <span class="st">&quot;Squared Bias&quot;</span> <span class="ot">=</span> <span class="st">&quot;solid&quot;</span>,</span>
+<span id="cb1-48"><a href="statistical-learning.html#cb1-48" tabindex="-1"></a>      <span class="st">&quot;Variance&quot;</span>     <span class="ot">=</span> <span class="st">&quot;solid&quot;</span>,</span>
+<span id="cb1-49"><a href="statistical-learning.html#cb1-49" tabindex="-1"></a>      <span class="st">&quot;Bayes Error&quot;</span>  <span class="ot">=</span> <span class="st">&quot;dashed&quot;</span></span>
+<span id="cb1-50"><a href="statistical-learning.html#cb1-50" tabindex="-1"></a>    )</span>
+<span id="cb1-51"><a href="statistical-learning.html#cb1-51" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb1-52"><a href="statistical-learning.html#cb1-52" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.5</span>, <span class="dv">1</span>), <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">&quot;Low&quot;</span>, <span class="st">&quot;Moderate&quot;</span>, <span class="st">&quot;High&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb1-53"><a href="statistical-learning.html#cb1-53" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">breaks =</span> <span class="cn">NULL</span>) <span class="sc">+</span></span>
+<span id="cb1-54"><a href="statistical-learning.html#cb1-54" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb1-55"><a href="statistical-learning.html#cb1-55" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">&quot;Flexibility&quot;</span>,</span>
+<span id="cb1-56"><a href="statistical-learning.html#cb1-56" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">&quot;Mean Squared Error&quot;</span>,</span>
+<span id="cb1-57"><a href="statistical-learning.html#cb1-57" tabindex="-1"></a>    <span class="at">color =</span> <span class="cn">NULL</span>,</span>
+<span id="cb1-58"><a href="statistical-learning.html#cb1-58" tabindex="-1"></a>    <span class="at">linetype =</span> <span class="cn">NULL</span>,</span>
+<span id="cb1-59"><a href="statistical-learning.html#cb1-59" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">&quot;The Bias-Variance Tradeoff&quot;</span></span>
+<span id="cb1-60"><a href="statistical-learning.html#cb1-60" tabindex="-1"></a>  )</span>
+<span id="cb1-61"><a href="statistical-learning.html#cb1-61" tabindex="-1"></a></span>
+<span id="cb1-62"><a href="statistical-learning.html#cb1-62" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">requireNamespace</span>(<span class="st">&quot;ggprism&quot;</span>, <span class="at">quietly =</span> <span class="cn">TRUE</span>)) {</span>
+<span id="cb1-63"><a href="statistical-learning.html#cb1-63" tabindex="-1"></a>  p <span class="sc">+</span> ggprism<span class="sc">::</span><span class="fu">theme_prism</span>(<span class="at">base_size =</span> <span class="dv">13</span>) <span class="sc">+</span></span>
+<span id="cb1-64"><a href="statistical-learning.html#cb1-64" tabindex="-1"></a>    <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;right&quot;</span>, <span class="at">axis.ticks.y =</span> <span class="fu">element_blank</span>())</span>
+<span id="cb1-65"><a href="statistical-learning.html#cb1-65" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb1-66"><a href="statistical-learning.html#cb1-66" tabindex="-1"></a>  p <span class="sc">+</span> <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">13</span>) <span class="sc">+</span></span>
+<span id="cb1-67"><a href="statistical-learning.html#cb1-67" tabindex="-1"></a>    <span class="fu">theme</span>(</span>
+<span id="cb1-68"><a href="statistical-learning.html#cb1-68" tabindex="-1"></a>      <span class="at">axis.line =</span> <span class="fu">element_line</span>(<span class="at">color =</span> <span class="st">&quot;black&quot;</span>, <span class="at">linewidth =</span> <span class="fl">0.8</span>),</span>
+<span id="cb1-69"><a href="statistical-learning.html#cb1-69" tabindex="-1"></a>      <span class="at">axis.ticks.x =</span> <span class="fu">element_line</span>(<span class="at">color =</span> <span class="st">&quot;black&quot;</span>, <span class="at">linewidth =</span> <span class="fl">0.8</span>),</span>
+<span id="cb1-70"><a href="statistical-learning.html#cb1-70" tabindex="-1"></a>      <span class="at">axis.ticks.y =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb1-71"><a href="statistical-learning.html#cb1-71" tabindex="-1"></a>      <span class="at">panel.grid =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb1-72"><a href="statistical-learning.html#cb1-72" tabindex="-1"></a>      <span class="at">legend.position =</span> <span class="st">&quot;right&quot;</span></span>
+<span id="cb1-73"><a href="statistical-learning.html#cb1-73" tabindex="-1"></a>    )</span>
+<span id="cb1-74"><a href="statistical-learning.html#cb1-74" tabindex="-1"></a>}</span></code></pre></div>
+<p><img src="02-statistical-learning_files/figure-html/q3-bias-variance-plot-1.png" alt="" width="672" /></p>
+<blockquote>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>Explain why each of the five curves has the shape displayed in
+part (a).</li>
+</ol>
+</blockquote>
+<p><strong>Squared bias</strong> - Inflexible model impose rigid assumptions (e.g., linearity). As flexibility increases, the model as the freedom to bend and approximate complex shapes (f), so bias decreases monotonically.</p>
+<p><strong>Variance</strong> - Increases with flexiblity because the model becomes hypersensitive to the specific training observations and their noise. Fitting a different training set would produce a widly different curve.</p>
+<p><strong>Training error</strong> - Always decreases monotonically because more flexible models have the df to get closer to the training observations (and can interpolate them perfectly).</p>
+<p><strong>Test error</strong> - Follows a U-shape because <span class="math inline">\(test MSE = bias^2 + Var(f) + \epsilon^2\)</span>. Initially, bias drops faster than variance rises (error goes down). But past the optimal point, Var(f) explodes faster than bias decreases, driving test error back up.</p>
+<p><strong>Irreducible error</strong> - Stays flat because it stems from unmeasured variables, sensoir noise and random fluctuatioi that do not depend on the model or its flexibility.</p>
 </div>
-<div id="question-4" class="section level3 hasAnchor">
+<div id="question-4" class="section level3 hasAnchor" number="2.1.4">
 <h3><span class="header-section-number">2.1.4</span> Question 4<a href="statistical-learning.html#question-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <blockquote>
 <p>You will now think of some real-life applications for statistical learning.</p>
 <ol style="list-style-type: lower-alpha">
-<li><p>Describe three real-life applications in which classification might
+<li>Describe three real-life applications in which classification might
 be useful. Describe the response, as well as the predictors. Is the goal of
-each application inference or prediction? Explain your answer.</p></li>
-<li><p>Describe three real-life applications in which regression might be
-useful. Describe the response, as well as the predictors. Is the goal of
-each application inference or prediction? Explain your answer.</p></li>
-<li><p>Describe three real-life applications in which cluster analysis might be
-useful.</p></li>
+each application inference or prediction? Explain your answer.</li>
 </ol>
 </blockquote>
+<p><strong>1. Bank churn:</strong>
+Response = Churned within 6 months (Yes/No).
+Predictors = account balance, transaction volume, tenure.
+Goal = <em>Prediction</em> (flagging accounts to offer promotions)</p>
+<p><strong>2. Chronic pain:</strong>
+Response = Pain resolved (Yes/No).
+Predictors = demographics, pain sensitization score.
+Goal = <em>Inference</em> (understanding drivers of recovery).</p>
+<p><strong>Employee turnover:</strong>
+Response = Resigned within 1 year (Yes/No).
+Predictors = salary, satisfaction score, commute time.
+Goal = <em>Inference</em> (designing retention policies)</p>
+<blockquote>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>Describe three real-life applications in which regression might be
+useful. Describe the response, as well as the predictors. Is the goal of
+each application inference or prediction? Explain your answer.</li>
+</ol>
+</blockquote>
+<p><strong>Pain trajectories:</strong>
+Response = Continuous pain rating (e.g., 0-10 numerical rating scale).
+Predictors = session count, exercise intensity, baseline pain.
+Goal = <em>Inference/Prediction</em></p>
+<p><strong>Blood pressure:</strong>
+Response = Change in systolic BP (mmHg).
+Predictors = treatment dosage, age, baseline BP.
+Goal = <em>Inference</em> (estimating treatment efficacy).</p>
+<p><strong>Test MSE:</strong>
+Response = Numerica test MSE.
+Predictors = degrees of freedom/model frexibility.
+Goal: <em>Prediction</em></p>
+<blockquote>
+<ol start="3" style="list-style-type: lower-alpha">
+<li>Describe three real-life applications in which cluster analysis might be
+useful.</li>
+</ol>
+</blockquote>
+<p><strong>Cancer cells:</strong>
+If we have tumor samples and no labels, we can use clustering to discover novel cancer subtypes based on gene expression profiles.</p>
+<p><strong>Stars:</strong>
+Grouping astronomical bodies based on luminosity, temperature and spectral pattern witout predifined categories.</p>
+<p><strong>Car insurance</strong>:
+Customer segmentation – grouping policy-holders into driving profiles (e.g., weekend drivers, high-speed commuters, rural drivers) based on telemetric data to tailor marktering or product tiers.</p>
 </div>
-<div id="question-5" class="section level3 hasAnchor">
+<div id="question-5" class="section level3 hasAnchor" number="2.1.5">
 <h3><span class="header-section-number">2.1.5</span> Question 5<a href="statistical-learning.html#question-5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <blockquote>
 <p>What are the advantages and disadvantages of a very flexible (versus a less
@@ -452,8 +647,12 @@ flexible) approach for regression or classification? Under what circumstances
 might a more flexible approach be preferred to a less flexible approach? When
 might a less flexible approach be preferred?</p>
 </blockquote>
+<p><strong>Flexible model:</strong>
+Will be prefered when the goal is <em>prediction</em>, i.e., when we’re more interested in accurately prediction Y than understanding f(x). Because of the low bias, it should be able to match the true, underlying shape more easily. However, because it has high variance, it is at higher risk of overfitting, especially if the number of observation is small.</p>
+<p><strong>Inflexible model:</strong>
+Will be prefered when the goal is <em>inference</em>, when we’re willing to sacrifice some accuracy in Y (high bias) to be able to understand f(x). Because of the low variance, is less at risk of overfitting, but will not capture the true, underlying shape as easily as a flexible model would. However, f(x) becomes easier to interpret.</p>
 </div>
-<div id="question-6" class="section level3 hasAnchor">
+<div id="question-6" class="section level3 hasAnchor" number="2.1.6">
 <h3><span class="header-section-number">2.1.6</span> Question 6<a href="statistical-learning.html#question-6" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <blockquote>
 <p>Describe the differences between a parametric and a non-parametric statistical
@@ -461,8 +660,16 @@ learning approach. What are the advantages of a parametric approach to
 regression or classification (as opposed to a non-parametric approach)? What
 are its disadvantages?</p>
 </blockquote>
+<p><strong>Parametric:</strong>
+- Reduces the problem to estimating a fixed, finite set of parameters. Once parameters are known, training data can be discarded.
+- <em>Advantages:</em> Much easier to estimate, requires far fewer observationis, less risky for overfitting, highly interpretatable.
+- <em>Disadvantages:</em> High bias if the assumed function form (e.g., straight line) doesn’t match the true form.</p>
+<p><strong>Non-parametric:</strong>
+- Makes no explicit assumption about the functional form of f(x) and does not fit a fixed set of parameters. Instead, lets the data directly define the shape.
+- <em>Advantages:</em> Can fit almost any arbitrary, complex shape (very low bias)
+- <em>Disadvantages:</em> Requires a large number of observations to avoid overfitting, and is computationally heavy and harder to interpret</p>
 </div>
-<div id="question-7" class="section level3 hasAnchor">
+<div id="question-7" class="section level3 hasAnchor" number="2.1.7">
 <h3><span class="header-section-number">2.1.7</span> Question 7<a href="statistical-learning.html#question-7" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <blockquote>
 <p>The table below provides a training data set containing six observations,
@@ -525,25 +732,55 @@ three predictors, and one qualitative response variable.</p>
 <p>Suppose we wish to use this data set to make a prediction for <span class="math inline">\(Y\)</span> when
 <span class="math inline">\(X_1 = X_2 = X_3 = 0\)</span> using <span class="math inline">\(K\)</span>-nearest neighbors.</p>
 <ol style="list-style-type: lower-alpha">
-<li><p>Compute the Euclidean distance between each observation and the test
-point, <span class="math inline">\(X_1 = X_2 = X_3 = 0\)</span>.</p></li>
-<li><p>What is our prediction with <span class="math inline">\(K = 1\)</span>? Why?</p></li>
-<li><p>What is our prediction with <span class="math inline">\(K = 3\)</span>? Why?</p></li>
-<li><p>If the Bayes decision boundary in this problem is highly non-linear, then
-would we expect the best value for <span class="math inline">\(K\)</span> to be large or small? Why?</p></li>
+<li>Compute the Euclidean distance between each observation and the test
+point, <span class="math inline">\(X_1 = X_2 = X_3 = 0\)</span>.</li>
 </ol>
 </blockquote>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="statistical-learning.html#cb1-1"></a>dat &lt;-<span class="st"> </span><span class="kw">data.frame</span>(</span>
-<span id="cb1-2"><a href="statistical-learning.html#cb1-2"></a>  <span class="st">&quot;x1&quot;</span> =<span class="st"> </span><span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">-1</span>, <span class="dv">1</span>),</span>
-<span id="cb1-3"><a href="statistical-learning.html#cb1-3"></a>  <span class="st">&quot;x2&quot;</span> =<span class="st"> </span><span class="kw">c</span>(<span class="dv">3</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>),</span>
-<span id="cb1-4"><a href="statistical-learning.html#cb1-4"></a>  <span class="st">&quot;x3&quot;</span> =<span class="st"> </span><span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">1</span>),</span>
-<span id="cb1-5"><a href="statistical-learning.html#cb1-5"></a>  <span class="st">&quot;y&quot;</span> =<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;Red&quot;</span>, <span class="st">&quot;Red&quot;</span>, <span class="st">&quot;Red&quot;</span>, <span class="st">&quot;Green&quot;</span>, <span class="st">&quot;Green&quot;</span>, <span class="st">&quot;Red&quot;</span>)</span>
-<span id="cb1-6"><a href="statistical-learning.html#cb1-6"></a>)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="statistical-learning.html#cb2-1" tabindex="-1"></a>obs <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="dv">0</span>, <span class="dv">3</span>)</span>
+<span id="cb2-2"><a href="statistical-learning.html#cb2-2" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="statistical-learning.html#cb2-3" tabindex="-1"></a>distance_1 <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(<span class="fu">sum</span>((<span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">0</span>) <span class="sc">-</span> obs)<span class="sc">^</span><span class="dv">2</span>))</span>
+<span id="cb2-4"><a href="statistical-learning.html#cb2-4" tabindex="-1"></a>distance_2 <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(<span class="fu">sum</span>((<span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">0</span>, <span class="dv">0</span>) <span class="sc">-</span> obs)<span class="sc">^</span><span class="dv">2</span>))</span>
+<span id="cb2-5"><a href="statistical-learning.html#cb2-5" tabindex="-1"></a>distance_3 <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(<span class="fu">sum</span>((<span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">3</span>) <span class="sc">-</span> obs)<span class="sc">^</span><span class="dv">2</span>))</span>
+<span id="cb2-6"><a href="statistical-learning.html#cb2-6" tabindex="-1"></a>distance_4 <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(<span class="fu">sum</span>((<span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>) <span class="sc">-</span> obs)<span class="sc">^</span><span class="dv">2</span>))</span>
+<span id="cb2-7"><a href="statistical-learning.html#cb2-7" tabindex="-1"></a>distance_5 <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(<span class="fu">sum</span>((<span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>) <span class="sc">-</span> obs)<span class="sc">^</span><span class="dv">2</span>))</span>
+<span id="cb2-8"><a href="statistical-learning.html#cb2-8" tabindex="-1"></a>distance_6 <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(<span class="fu">sum</span>((<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>) <span class="sc">-</span> obs)<span class="sc">^</span><span class="dv">2</span>))</span>
+<span id="cb2-9"><a href="statistical-learning.html#cb2-9" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="statistical-learning.html#cb2-10" tabindex="-1"></a>kkn_vector <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">N1 =</span> distance_1, <span class="at">N2=</span> distance_2, <span class="at">N3 =</span> distance_3, <span class="at">N4 =</span> distance_4, <span class="at">N5 =</span> distance_5, <span class="at">N6 =</span> distance_6)</span>
+<span id="cb2-11"><a href="statistical-learning.html#cb2-11" tabindex="-1"></a><span class="fu">sort</span>(kkn_vector)</span></code></pre></div>
+<pre><code>##       N5       N6       N2       N4       N1       N3 
+## 1.414214 1.732051 2.000000 2.236068 3.000000 3.162278</code></pre>
+<blockquote>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>What is our prediction with <span class="math inline">\(K = 1\)</span>? Why?</li>
+</ol>
+</blockquote>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="statistical-learning.html#cb4-1" tabindex="-1"></a>kkn1 <span class="ot">&lt;-</span> <span class="fu">sort</span>(kkn_vector)[<span class="dv">1</span>]</span></code></pre></div>
+<p>Observation 5 is the closest neighbor, which is <strong>Green</strong>.</p>
+<blockquote>
+<ol start="3" style="list-style-type: lower-alpha">
+<li>What is our prediction with <span class="math inline">\(K = 3\)</span>? Why?</li>
+</ol>
+</blockquote>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="statistical-learning.html#cb5-1" tabindex="-1"></a>kkn3 <span class="ot">&lt;-</span> <span class="fu">sort</span>(kkn_vector)[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>]</span></code></pre></div>
+<p>Observation 5 (<em>green</em>), 6 (<em>red</em>) and 2 (<em>red</em>) are the closest neighbors. Majority vote wins, prediction is <strong>red</strong>.</p>
+<blockquote>
+<ol start="4" style="list-style-type: lower-alpha">
+<li>If the Bayes decision boundary in this problem is highly non-linear, then
+would we expect the best value for <span class="math inline">\(K\)</span> to be large or small? Why?</li>
+</ol>
+</blockquote>
+<p>If the true boundary is highly non-linear, we need a flexible model to bend and capture those curves. Therefore, K should be small.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="statistical-learning.html#cb6-1" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb6-2"><a href="statistical-learning.html#cb6-2" tabindex="-1"></a>  <span class="st">&quot;x1&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="sc">-</span><span class="dv">1</span>, <span class="dv">1</span>),</span>
+<span id="cb6-3"><a href="statistical-learning.html#cb6-3" tabindex="-1"></a>  <span class="st">&quot;x2&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>),</span>
+<span id="cb6-4"><a href="statistical-learning.html#cb6-4" tabindex="-1"></a>  <span class="st">&quot;x3&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">1</span>),</span>
+<span id="cb6-5"><a href="statistical-learning.html#cb6-5" tabindex="-1"></a>  <span class="st">&quot;y&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;Red&quot;</span>, <span class="st">&quot;Red&quot;</span>, <span class="st">&quot;Red&quot;</span>, <span class="st">&quot;Green&quot;</span>, <span class="st">&quot;Green&quot;</span>, <span class="st">&quot;Red&quot;</span>)</span>
+<span id="cb6-6"><a href="statistical-learning.html#cb6-6" tabindex="-1"></a>)</span></code></pre></div>
 </div>
 </div>
-<div id="applied" class="section level2 hasAnchor">
+<div id="applied" class="section level2 hasAnchor" number="2.2">
 <h2><span class="header-section-number">2.2</span> Applied<a href="statistical-learning.html#applied" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="question-8" class="section level3 hasAnchor">
+<div id="question-8" class="section level3 hasAnchor" number="2.2.1">
 <h3><span class="header-section-number">2.2.1</span> Question 8<a href="statistical-learning.html#question-8" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <blockquote>
 <p>This exercise relates to the <code>College</code> data set, which can be found in
@@ -579,15 +816,15 @@ location for the data.</p></li>
 first column is just the name of each university. We don’t really want <code>R</code>
 to treat this as data. However, it may be handy to have these names for
 later. Try the following commands:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="statistical-learning.html#cb2-1"></a><span class="kw">rownames</span>(college) &lt;-<span class="st"> </span>college[, <span class="dv">1</span>]</span>
-<span id="cb2-2"><a href="statistical-learning.html#cb2-2"></a><span class="kw">View</span>(college)</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="statistical-learning.html#cb7-1" tabindex="-1"></a><span class="fu">rownames</span>(college) <span class="ot">&lt;-</span> college[, <span class="dv">1</span>]</span>
+<span id="cb7-2"><a href="statistical-learning.html#cb7-2" tabindex="-1"></a><span class="fu">View</span>(college)</span></code></pre></div>
 <p>You should see that there is now a <code>row.names</code> column with the name of
 each university recorded. This means that R has given each row a name
 corresponding to the appropriate university. <code>R</code> will not try to perform
 calculations on the row names. However, we still need to eliminate the
 first column in the data where the names are stored. Try</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="statistical-learning.html#cb3-1"></a>college &lt;-<span class="st"> </span>college [, <span class="dv">-1</span>]</span>
-<span id="cb3-2"><a href="statistical-learning.html#cb3-2"></a><span class="kw">View</span>(college)</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="statistical-learning.html#cb8-1" tabindex="-1"></a>college <span class="ot">&lt;-</span> college [, <span class="sc">-</span><span class="dv">1</span>]</span>
+<span id="cb8-2"><a href="statistical-learning.html#cb8-2" tabindex="-1"></a><span class="fu">View</span>(college)</span></code></pre></div>
 <p>Now you should see that the first data column is <code>Private</code>. Note that
 another column labeled <code>row.names</code> now appears before the <code>Private</code> column.
 However, this is not a data column but rather the name that R is giving to
@@ -604,10 +841,10 @@ reference the first ten columns of a matrix A using <code>A[,1:10]</code>.</p></
 <code>Top10perc</code> variable. We are going to divide universities into two
 groups based on whether or not the proportion of students coming from
 the top 10% of their high school classes exceeds 50%.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="statistical-learning.html#cb4-1"></a><span class="op">&gt;</span><span class="st"> </span>Elite &lt;-<span class="st"> </span><span class="kw">rep</span>(<span class="st">&quot;No&quot;</span>, <span class="kw">nrow</span>(college))</span>
-<span id="cb4-2"><a href="statistical-learning.html#cb4-2"></a><span class="op">&gt;</span><span class="st"> </span>Elite[college<span class="op">$</span>Top10perc <span class="op">&gt;</span><span class="st"> </span><span class="dv">50</span>] &lt;-<span class="st"> &quot;Yes&quot;</span></span>
-<span id="cb4-3"><a href="statistical-learning.html#cb4-3"></a><span class="op">&gt;</span><span class="st"> </span>Elite &lt;-<span class="st"> </span><span class="kw">as.factor</span>(Elite)</span>
-<span id="cb4-4"><a href="statistical-learning.html#cb4-4"></a><span class="op">&gt;</span><span class="st"> </span>college &lt;-<span class="st"> </span><span class="kw">data.frame</span>(college, Elite)</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="statistical-learning.html#cb9-1" tabindex="-1"></a><span class="sc">&gt;</span> Elite <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="st">&quot;No&quot;</span>, <span class="fu">nrow</span>(college))</span>
+<span id="cb9-2"><a href="statistical-learning.html#cb9-2" tabindex="-1"></a><span class="sc">&gt;</span> Elite[college<span class="sc">$</span>Top10perc <span class="sc">&gt;</span> <span class="dv">50</span>] <span class="ot">&lt;-</span> <span class="st">&quot;Yes&quot;</span></span>
+<span id="cb9-3"><a href="statistical-learning.html#cb9-3" tabindex="-1"></a><span class="sc">&gt;</span> Elite <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(Elite)</span>
+<span id="cb9-4"><a href="statistical-learning.html#cb9-4" tabindex="-1"></a><span class="sc">&gt;</span> college <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(college, Elite)</span></code></pre></div>
 <p>Use the <code>summary()</code> function to see how many elite universities there
 are. Now use the <code>plot()</code> function to produce side-by-side boxplots of
 <code>Outstate</code> versus <code>Elite</code>.</p></li>
@@ -623,7 +860,7 @@ discover.</p></li>
 </ol>
 </blockquote>
 </div>
-<div id="question-9" class="section level3 hasAnchor">
+<div id="question-9" class="section level3 hasAnchor" number="2.2.2">
 <h3><span class="header-section-number">2.2.2</span> Question 9<a href="statistical-learning.html#question-9" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <blockquote>
 <p>This exercise involves the Auto data set studied in the lab. Make sure
@@ -645,19 +882,20 @@ might be useful in predicting <code>mpg</code>? Justify your answer.</p></li>
 </ol>
 </blockquote>
 </div>
-<div id="question-10" class="section level3 hasAnchor">
+<div id="question-10" class="section level3 hasAnchor" number="2.2.3">
 <h3><span class="header-section-number">2.2.3</span> Question 10<a href="statistical-learning.html#question-10" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <blockquote>
 <p>This exercise involves the <code>Boston</code> housing data set.</p>
 <ol style="list-style-type: lower-alpha">
 <li><p>To begin, load in the <code>Boston</code> data set. The <code>Boston</code> data set is part of
 the <code>ISLR2</code> library in R.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="statistical-learning.html#cb5-1"></a><span class="op">&gt;</span><span class="st"> </span><span class="kw">library</span>(ISLR2)</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="statistical-learning.html#cb10-1" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">library</span>(ISLR2)</span></code></pre></div>
 <p>Now the data set is contained in the object <code>Boston</code>.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="statistical-learning.html#cb6-1"></a><span class="op">&gt;</span><span class="st"> </span>Boston</span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="statistical-learning.html#cb11-1" tabindex="-1"></a><span class="sc">&gt;</span> Boston</span></code></pre></div>
 <p>Read about the data set:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="statistical-learning.html#cb7-1"></a><span class="op">&gt;</span><span class="st"> </span>?Boston</span></code></pre></div>
-<p>How many rows are in this data set? How many columns? What do the rows and
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="statistical-learning.html#cb12-1" tabindex="-1"></a><span class="sc">&gt;</span> ?Boston</span></code></pre></div>
+<p>œ
+How many rows are in this data set? How many columns? What do the rows and
 columns represent?</p></li>
 <li><p>Make some pairwise scatterplots of the predictors (columns) in this data
 set. Describe your findings.</p></li>
@@ -701,42 +939,42 @@ census tracts that average more than eight rooms per dwelling.</p></li>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
-"sharing": {
-"github": true,
-"facebook": false,
-"twitter": false,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": {}
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": "https://github.com/danhalligan/ISLRv2-solutions-template/edit/master/02-statistical-learning.Rmd",
-"text": "Edit"
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": null,
-"text": null
-},
-"download": null,
-"search": {
-"engine": "fuse",
-"options": null
-},
-"toc": {
-"collapse": "section"
-}
+  "sharing": {
+    "github": true,
+    "facebook": false,
+    "twitter": false,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": {}
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": "https://github.com/danhalligan/ISLRv2-solutions-template/edit/master/02-statistical-learning.Rmd",
+    "text": "Edit"
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "section"
+  }
 });
 });
 </script>

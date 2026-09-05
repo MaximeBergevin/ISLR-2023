@@ -14,7 +14,7 @@ Hastie and Robert Tibshirani.
 * Push your edits to build your [bookdown book of solutions].
 
 [Generate a new repository from this template]: https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template
-[bookdown book of solutions]: https://danhalligan.github.io/ISLRv2-solutions-template/
+[bookdown book of solutions]: https://maximebergevin.github.io/ISLR-2023/statistical-learning.html
 
 ## Usage
 
